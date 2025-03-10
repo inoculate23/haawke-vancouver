@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video example - three-projected-material</title>
+
+
+
+
+    <style>
+
+      .app {
+       margin: 0px;
+       position:absolute;
+       z-index: -20;
+      }
+
+     html, body {
+       height: 100%;
+     }
+
+     html {
+       font-size: calc(var(--font-size) - 1px);
+       line-height: calc(var(--line-height) - 1px);
+     }
+
+     body {
+       font-family: 'Roboto Mono', monospace;
+       margin: 0px;
+       color: var(--text-color);
+       background-color: var(--background-color);
+     }
+
+     a {
+       text-decoration: none;
+     }
+
+     h1 {
+       font-size: 18px;
+       line-height: 24px;
+       font-weight: 500;
+     }
+
+     h2 {
+       padding: 0;
+       margin: 16px 0;
+       font-size: calc(var(--font-size) - 1px);
+       line-height: var(--line-height);
+       font-weight: 500;
+       color: var(--color-blue);
+     }
+
+
+#startButton {
+ margin:30%;
+ position: "fixed";
+ z-index:199999;
+}
+#overlay {
+ width:100%;
+ height:100%;
+ position: absolute;
+ z-index:199999;
+
+}
+   </style>
+   <script type="module" crossorigin src="./assets/main-3f4b9c73.js"></script>
+   <link rel="modulepreload" crossorigin href="./assets/WebGLApp-802e8264.js">
+   <link rel="modulepreload" crossorigin href="./assets/three-utils-8a47a655.js">
+   <link rel="stylesheet" href="./assets/WebGLApp-d0e09dec.css">
+ </head>
+<body>
+ <div id="overlay">
+   <button id="startButton">Play</button>
+ </div>
+    <canvas id="app"></canvas>
+
+
+    <video id="video" muted playsinline loop></video>
+
+  </body>
+</html>
